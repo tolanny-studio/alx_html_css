@@ -152,9 +152,9 @@ h1{
 /* header section styling end */
 
 
-/* testimonial section styling start */
+/* quote section styling start */
 
-.testimonial{
+.quote{
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-color: var(--primary-color);
@@ -164,16 +164,16 @@ h1{
   
 }
 
-.testimonial img{
+.quote img{
   border-radius: 50%;
   margin-left: 200px;
   
 }
 
-.testimonial blockquote{
+.quote blockquote{
   width: 500px;
   margin-bottom: 30px;
 }
 
-/* testimonial section styling ends */
+/* quote section styling ends */
 
