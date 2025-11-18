@@ -1,0 +1,152 @@
+:root{
+  --color-white:#ffffff;
+  --primary-color:#C271FF;
+}
+
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro',Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.top-wrapper{
+  height: 1093px;
+  width: 100%;
+  background: lightblue url(./images/hero.png) no-repeat center center / cover; 
+  
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.top-wrapper-gradient{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1093px;
+  width: 100%;
+  background: radial-gradient(ellipse at top, rgba(0, 0, 0, 0.3) 2%,
+                                              rgba(37, 37, 37, 0.8) 30%,
+                                              rgba(7, 22, 41) 80%);
+}
+
+/* nav and logo styling start */
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 150px ;
+}
+
+nav ul{
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+/* nav and logo styling end */
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* header section styling start  */
+
+.main-section{
+  margin-top: 200px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 86px;
+  color: var(--color-white);
+  margin-bottom: 30px;
+  align-self: center;
+}
+
+.activites{
+  display: flex;
+  flex-direction: column;
+  color: var(--color-white);
+}
+
+.sub-acivites{
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  width: 500px;
+}
+
+
+
+.register-btn{
+  padding: 20px;
+  width: 200px;
+  align-self: center; 
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  border: none;
+  color: var(--color-white);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.377);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.register-btn:hover{
+  transform: scale(1.01);
+}
+
+.tutor-container{
+  margin-top: 100px;
+  text-align: center;
+  align-self: center;
+}
+
+.tutor-container > h2{
+  color: white;
+  font-weight: lighter; 
+}
+
+.tutor-container > h2 > span{
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.tutors{
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  /* background-color: green; */
+  width: 1000px;
+  color: var(--color-white);
+  
+}
+
+.tutors > div >img{
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.tutors > div >h3{
+  margin-bottom: 10px ;
+}
+
+.tutors > div >p{
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+/* header section styling end */
