@@ -353,3 +353,25 @@ h1{
 /* faq section end */
 
 
+/* footer styling start */
+
+footer{
+  background-color: var(--secondary-color);
+  padding: 80px 150px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer div{
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-white);
+}
+
+
+footer p{
+  text-align: center;
+  color: var(--color-white);
+  font-size: 12px;
+}
+/* footer styling end */
