@@ -177,7 +177,9 @@ h1{
 
 /* quote section styling ends */
 
-/* popular tutorial styling */
+
+
+/* popular tutorial styling starts */
 
 .popular-tutorials-container{
   padding: 80px 150px;
@@ -263,4 +265,6 @@ h1{
 .fa-star{
   color: var(--primary-color);
 }
+
+/* popular tutorial styling ends */
 
