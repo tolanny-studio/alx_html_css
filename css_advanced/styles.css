@@ -1,6 +1,7 @@
 :root{
   --color-white:#ffffff;
   --primary-color:#C271FF;
+  --secondary-color:#071629;
 }
 
 *,*::before,*::after{
@@ -267,4 +268,50 @@ h1{
 }
 
 /* popular tutorial styling ends */
+
+
+/* membership section begin */
+
+.membership-container{
+  padding: 80px 150px;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--color-white);
+}
+
+.membership-container > h2{
+  color: white;
+  font-weight: lighter; 
+}
+
+.membership-container> h2 > span{
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.members{
+  display: flex;
+  margin: 50px auto ;
+  justify-content: space-evenly;
+}
+
+.members div{
+  width: 200px;
+ 
+}
+
+.members h3{
+  font-weight: 400;
+  font-size: 14px;
+  margin: 20px auto;
+}
+
+.members p{
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+
+/* membership section end */
 
