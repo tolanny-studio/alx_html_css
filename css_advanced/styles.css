@@ -315,3 +315,41 @@ h1{
 
 /* membership section end */
 
+/* faq section start */
+
+.faq-container{
+  padding: 80px 150px;
+  background-color: var(--color-white);
+}
+
+.faq-container > h2{
+
+  font-weight: lighter; 
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.faq{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 100px;
+}
+
+.faq h3{
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.faq p{
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* faq section end */
+
+
