@@ -1,0 +1,256 @@
+:root{
+  --primary-white: #fff;
+  --primary-color: #FF6565;
+}
+*,*::after,*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'source sans pro','Spin-Cycle-OT', sans-serif ;
+  transition: 0.3s ease;
+}
+
+a:hover,
+a:active {
+  color: #FF6565;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+}
+
+button:hover,button:active{
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+body {
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+header{
+  background-image: url(./images/headphones_hero_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+
+/* navigation style begins */
+
+.nav-container{
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+
+}
+
+/* Container */
+.menu-container {
+  width: 100%;
+
+}
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+  width: 35px;
+  cursor: pointer;
+  
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 30px;
+  margin: 5px 0;
+  background: var(--primary-white);
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.hamburger span:nth-child(2){
+  width: 20px;
+}
+
+/* --- Toggle Animation (Hamburger → Cross) --- */
+
+#menu-toggle:checked + .hamburger span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+  margin-bottom: 5px;
+}
+
+#menu-toggle:checked + .hamburger span:nth-child(2) {
+  opacity: 0;
+  
+}
+
+#menu-toggle:checked + .hamburger span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+  margin-top: 8px;
+}
+
+/* --- Menu Styling --- */
+
+.menu {
+  display: none;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px auto 5px;
+
+}
+
+.menu a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: var(--primary-white);
+  font-size: 16px;
+  margin: 8px auto;
+  }
+
+/* --- Show menu when checked --- */
+#menu-toggle:checked ~ .menu {
+  display: flex;
+}
+
+.website-logo{
+  position: absolute;
+  left: 30%;
+}
+
+.website-logo > img{
+  width: 200px;
+}
+
+
+
+nav a{
+  color: var(--primary-white);
+  text-decoration: none;
+}
+
+/* navigation style ends */
+
+h1{
+  text-align: center;
+  color: var(--primary-white);
+  font-size: 26px;
+  padding: 50px 100px 10px;
+  line-height: 1.2;
+}
+
+.header-intro{
+  text-align: center;
+  color: var(--primary-white);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 151px;
+  line-height: 1.2;
+}
+
+.call-to-action{
+  padding: 8px 16px;
+  border: none;
+  border-radius: 16px;
+  color: var(--primary-white);
+  background-color: var(--primary-color);
+  font-size: 12px;
+
+}
+
+.header-description{
+  text-align: center;
+  color: var(--primary-white);
+  font-size: 14px;
+  padding:10px 20px 100px;
+  line-height: 1.5;
+  font-weight: 200;
+  
+}
+
+@media screen and (min-width:600px) {
+  .website-logo{
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 768px){
+
+  .nav-container{
+    justify-content: space-between;
+    
+  }
+
+  .menu-container{
+    width:auto;
+    
+  }
+
+  .hamburger{
+    display: none !important;
+  }
+  
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    
+  }
+
+  .website-logo{
+    position: static;
+
+  }
+
+  .call-to-action{
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+
+  .header-call-to-action{
+
+  }
+
+  .header-description{
+    padding:10px 150px 100px;
+  }
+}
+
+
+@media screen and (min-width:1024px) {
+  header{
+    background-position:25% 25%;
+  }
+  .nav-container{
+    justify-content: space-around;
+    
+  } 
+  .header-description{
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+}
+
+
+@media screen and (min-width:1920px) {
+    .header-description{
+    padding-left: 650px;
+    padding-right: 650px;
+  }
+}
